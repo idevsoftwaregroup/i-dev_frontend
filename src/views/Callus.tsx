@@ -1,19 +1,19 @@
-export default function About() {
+export default function Callus() {
+  return (
+    <main dir="rtl">
+      <h1>تماس با ما</h1>
 
-    return (
+      <p>آیا ایده‌ای برای یک محصول دیجیتال دارید؟ با ما صحبت کنید.</p>
 
-        <section className="padding">
+      <section>
+        <h3>راه‌های ارتباطی</h3>
 
-            <h3>
-                <i className="icon">call</i> تماس با ما
-            </h3>
+        <p>شماره تماس (مشاوره): 09024276771</p>
+      </section>
 
-            <p>
-                تماس با
-            </p>
+      <h2>شروع همکاری</h2>
 
-        </section>
-
-    );
-
+      <p>تیم ما آماده است تا پروژه شما را از ایده تا محصول نهایی همراهی کند.</p>
+    </main>
+  );
 }

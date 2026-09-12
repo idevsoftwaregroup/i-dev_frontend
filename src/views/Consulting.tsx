@@ -1,19 +1,26 @@
 export default function Consulting() {
+  return (
+    <main dir="rtl">
+      <h1>مشاوره فناوری اطلاعات</h1>
 
-    return (
+      <p>
+        با تجربه مهندسی نرم‌افزار و معماری سیستم، به سازمان‌ها در انتخاب فناوری،
+        طراحی سیستم و تحول دیجیتال کمک می‌کنیم.
+      </p>
 
-        <section className="padding">
+      <h2>خدمات مشاوره</h2>
 
-            <h3>
-                🧠 مشاوره تکنولوژی
-            </h3>
+      <ul>
+        <li>تحلیل و طراحی معماری نرم‌افزار</li>
 
-            <p>
-                Software Architecture و Technology Consulting
-            </p>
+        <li>انتخاب Technology Stack مناسب</li>
 
-        </section>
+        <li>بهبود فرآیند توسعه نرم‌افزار</li>
 
-    );
+        <li>امنیت نرم‌افزار و DevSecOps</li>
 
+        <li>طراحی زیرساخت Cloud Ready</li>
+      </ul>
+    </main>
+  );
 }

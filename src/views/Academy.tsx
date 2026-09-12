@@ -1,19 +1,26 @@
 export default function Academy() {
+  return (
+    <main dir="rtl">
+      <h1>آکادمی</h1>
 
-    return (
+      <p>
+        آموزش تخصصی برنامه‌نویسی، مهندسی نرم‌افزار و فناوری‌های روز برای
+        توسعه‌دهندگان آینده.
+      </p>
 
-        <section className="padding">
+      <h2>دوره‌های آموزشی</h2>
 
-            <h3>
-                🎓 آکادمی
-            </h3>
+      <ul>
+        <li>آموزش برنامه‌نویسی Web</li>
 
-            <p>
-                آموزش برنامه نویسی، معماری نرم افزار و امنیت
-            </p>
+        <li>JavaScript و TypeScript</li>
 
-        </section>
+        <li>معماری نرم‌افزار</li>
 
-    );
+        <li>Clean Code و Design Pattern</li>
 
+        <li>DevOps و DevSecOps</li>
+      </ul>
+    </main>
+  );
 }
