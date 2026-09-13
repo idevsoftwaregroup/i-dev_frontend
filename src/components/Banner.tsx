@@ -5,7 +5,6 @@ export default function Banner() {
   const [selectedSlide, setSelectedSlide] = useState<
     (typeof slides)[number] | null
   >(null);
-  const slidesPerViewNumber = 3;
   const slides = [
     {
       title: "طراحی و توسعه وب‌سایت",
