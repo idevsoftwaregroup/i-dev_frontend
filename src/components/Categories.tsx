@@ -25,21 +25,50 @@ export default function Categories() {
   ];
 
   const style = {
-    rightAlign: 'RTL',
-    leftAlign: 'LTR'
-  }
+    rightAlign: "RTL",
+    leftAlign: "LTR",
+  };
 
   return (
-    <Swiper spaceBetween={20} slidesPerView={2} loop={true}>
+    <Swiper
+      spaceBetween={20}
+      slidesPerView={2}
+      loop={true}
+      breakpoints={{
+        // Mobile
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+
+        // Tablet
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+
+        // Laptop / Desktop
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      }}
+    >
       {slides.map((item, index) => (
         <SwiperSlide key={index}>
-          <article className="row card responsive border borderInput round gray" style={{border: '1px solid #dedede'}} dir={`${style.rightAlign}`}>
+          <article
+            className="row card responsive border borderInput round gray"
+            style={{ border: "1px solid #dedede" }}
+            dir={`${style.rightAlign}`}
+          >
             <div className="center-align">
               <i className="large">{item.icon}</i>
             </div>
             <div className="max">
-              <text className="large bold right-align transparent">{item.title}</text>
-              <div className="">{ item.text }</div>
+              <text className="large bold right-align transparent">
+                {item.title}
+              </text>
+              <div className="">{item.text}</div>
             </div>
           </article>
         </SwiperSlide>
