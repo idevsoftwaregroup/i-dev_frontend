@@ -5,6 +5,7 @@ export default function Banner() {
   const [selectedSlide, setSelectedSlide] = useState<
     (typeof slides)[number] | null
   >(null);
+  const slidesPerViewNumber = 3;
   const slides = [
     {
       title: "طراحی و توسعه وب‌سایت",
@@ -55,7 +56,30 @@ export default function Banner() {
   return (
     <>
       {" "}
-      <Swiper spaceBetween={20} slidesPerView={2} loop={true} dir="rtl">
+      <Swiper
+        spaceBetween={20}
+        loop={true}
+        dir="rtl"
+        breakpoints={{
+          // Mobile
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+
+          // Tablet
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+
+          // Laptop / Desktop
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        }}
+      >
         {" "}
         {slides.map((item, index) => (
           <SwiperSlide key={index}>
@@ -92,7 +116,7 @@ export default function Banner() {
                 {" "}
                 <span className="small" style={{ opacity: 0.6 }}>
                   {" "}
-                  {item.label}{" "}
+                  {/* {item.label}{" "} */}
                 </span>{" "}
                 <h5 style={{ margin: "8px 0" }}> {item.title} </h5>{" "}
                 <p
