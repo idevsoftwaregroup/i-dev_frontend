@@ -31,6 +31,7 @@ export default function Categories() {
 
   return (
     <Swiper
+      dir="RTL"
       spaceBetween={20}
       slidesPerView={2}
       loop={true}
@@ -49,7 +50,7 @@ export default function Categories() {
 
         // Laptop / Desktop
         1200: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 20,
         },
       }}
