@@ -7,17 +7,17 @@ export default function Navigation() {
   const [open, setOpen] = useState(false);
 
   const style = {
-    alignRTL: 'RTL',
-    alignLTR: 'LTR',
-    surface: 'surface'
-  }
+    alignRTL: "RTL",
+    alignLTR: "LTR",
+    surface: "surface",
+  };
 
   return (
     <>
       {/* TOP HEADER */}
 
       <header className="padding">
-        <nav className={`${style.surface}`} dir={ `${style.alignRTL}` }>
+        <nav className={`${style.surface}`} dir={`${style.alignRTL}`}>
           {/* RIGHT SIDE */}
           <div className="row ">
             <button
@@ -28,7 +28,9 @@ export default function Navigation() {
             </button>
 
             <button className="circle  transparent  large">
-              <a href="tel:+989024276771"><i className="large">call</i></a>
+              <a href="tel:+989024276771">
+                <i className="large">call</i>
+              </a>
             </button>
           </div>
 
@@ -38,7 +40,7 @@ export default function Navigation() {
 
           {/* LEFT SIDE LOGO */}
 
-          <img src={logo} className="circle right-round top-round" alt="i-dev" />
+          <img src={logo} className="circle " width="125px" alt="i-dev" />
         </nav>
       </header>
 
@@ -49,7 +51,9 @@ export default function Navigation() {
           <nav>
             <img src={logo} className="circle large" alt="logo" />
 
-            <h6 className="max small ">گروه نرم فزاری  <sup className="bold"> آی دِو </sup></h6>
+            <h6 className="max small ">
+              گروه نرم فزاری <sup className="bold"> آی دِو </sup>
+            </h6>
 
             <button
               className="transparent circle large"
@@ -63,7 +67,11 @@ export default function Navigation() {
         <div className="space"></div>
 
         <ul className="list">
-          <li className="wave round" dir={ style.alignRTL } onClick={() => setOpen(false)}>
+          <li
+            className="wave round"
+            dir={style.alignRTL}
+            onClick={() => setOpen(false)}
+          >
             <NavLink to="/">
               <i>home</i>
 
@@ -71,7 +79,11 @@ export default function Navigation() {
             </NavLink>
           </li>
 
-          <li className="wave round" dir={ style.alignRTL } onClick={() => setOpen(false)}>
+          <li
+            className="wave round"
+            dir={style.alignRTL}
+            onClick={() => setOpen(false)}
+          >
             <NavLink to="/academy">
               <i>school</i>
 
@@ -79,7 +91,11 @@ export default function Navigation() {
             </NavLink>
           </li>
 
-          <li className="wave round" dir={ style.alignRTL } onClick={() => setOpen(false)}>
+          <li
+            className="wave round"
+            dir={style.alignRTL}
+            onClick={() => setOpen(false)}
+          >
             <NavLink to="/consulting">
               <i>psychology</i>
 
@@ -87,7 +103,11 @@ export default function Navigation() {
             </NavLink>
           </li>
 
-          <li className="wave round" dir={ style.alignRTL } onClick={() => setOpen(false)}>
+          <li
+            className="wave round"
+            dir={style.alignRTL}
+            onClick={() => setOpen(false)}
+          >
             <NavLink to="/projects">
               <i>rocket_launch</i>
 
@@ -99,7 +119,11 @@ export default function Navigation() {
           <hr className="max spav" />
           <div className="space"></div>
 
-          <li className="wave round" dir={ style.alignRTL } onClick={() => setOpen(false)}>
+          <li
+            className="wave round"
+            dir={style.alignRTL}
+            onClick={() => setOpen(false)}
+          >
             <NavLink to="/about">
               <i>info</i>
 
@@ -107,8 +131,11 @@ export default function Navigation() {
             </NavLink>
           </li>
 
-
-          <li className="wave round" dir={ style.alignRTL } onClick={() => setOpen(false)}>
+          <li
+            className="wave round"
+            dir={style.alignRTL}
+            onClick={() => setOpen(false)}
+          >
             <NavLink to="/callus">
               <i>call</i>
 
@@ -116,10 +143,8 @@ export default function Navigation() {
             </NavLink>
           </li>
 
-
           <div className="space"></div>
           <div className="space"></div>
-
 
           <li className="fixed bottom right-align">
             <div className="fixed bottom">
@@ -129,7 +154,6 @@ export default function Navigation() {
               </p>
             </div>
           </li>
-
         </ul>
       </dialog>
     </>
