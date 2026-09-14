@@ -11,23 +11,31 @@ export default function Home() {
     <section>
       {/* Search */}
 
-      <div
-        className="field label border border-style round large grey3"
-        dir="rtl"
-      >
+      <div className="field label round large" dir="rtl">
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder=" "
+          dir="rtl"
           style={{
             border: "1px solid #dedede",
+            padding: "10px 45px 10px 15px",
+            width: "100%",
+            boxSizing: "border-box",
           }}
-          placeholder=" "
         />
 
-        <label>جستجو کن</label>
-
-        <i className="large">search</i>
+        <label
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
+        >
+          <i className="large">search</i>
+          <span>جستجو کن</span>
+        </label>
       </div>
 
       <div className="large-space"></div>
