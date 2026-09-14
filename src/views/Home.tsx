@@ -11,7 +11,7 @@ export default function Home() {
     <section>
       {/* Search */}
 
-      <div className="field label round large" dir="rtl">
+      <div className="field label round large " dir="rtl">
         <input
           type="text"
           value={searchTerm}
